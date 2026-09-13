@@ -1,0 +1,417 @@
+[
+  {
+    "text": "AI Chatbot\n(Customer Support\nVirtual Agent using\nNatural Language\nProcessing)\nPresented by\n23BAI11114 MALISHKA SALIL PARADKAR\n23BAI11146 SAHU SAMIKSHA SAMEER\n23BAI11147 DIVYANSH BHARDWAJ\n23BAI11198 ARYA KHULLAR\n23BAI11205 AASTHA NAGAR\n23BAI11209 GARV GUPTA",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 1
+  },
+  {
+    "text": "An AI Chatbot is a software that can\ninteract with users in natural language.\nIt simulates human conversation using\ntext or voice.\nUses Natural Language Processing (NLP)\nto understand and respond.\nCan handle multiple queries instantly\nwithout human intervention.\nIntroduction – What\nis an AI Chatbot?",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 2
+  },
+  {
+    "text": "Role of NLP in Chatbots\nNLP helps chatbots understand human\nlanguage.\nConverts user input into structured data.\nKey tasks:\nText understanding\nIntent detection\nEntity extraction\nEnables meaningful and context-aware\nresponses.",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 3
+  },
+  {
+    "text": "Widely used in customer support systems\nExamples:\nOrder tracking\nComplaint handling\nFAQs automation\nUsed by companies like:\nAmazon\nFlipkart\nBanking apps\nReal-World Use of\nChatbots",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 4
+  },
+  {
+    "text": "Case Study Overview\nExample: Customer Support\nChatbot\nHandles:\nOrder tracking\nComplaints\nGeneral queries\nWorks 24/7 without human\ninvolvement\nReduces workload on human agents",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 5
+  },
+  {
+    "text": "Example User Input\nUser Input:\n 👉 “I want to track my order 123”\nWhat chatbot does:\nUnderstands request type →  Track\norder\nExtracts order ID →  123\nGives response →  Order status",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 6
+  },
+  {
+    "text": "NLP Pipeline in AI Chatbot\nUser Input\nData\nPreproces\nsing\nFeature\nExtraction Modelling Response\n1. Data Preprocessing:\na. Sentence Segmentation\nb. Word Tokenization\nd. Normalization\n2. Feature Extraction\nConverting text into\nnumerical features by\nassigning importance to\nwords using TF-IDF values.\n3.Modelling\nApplying machine learning\nalgorithms (e.g., Naive\nBayes) to classify user\nintent.c. Stopword removal",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 7
+  },
+  {
+    "text": "rd removal",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 7
+  },
+  {
+    "text": "Input:\n “I want to track my order 123”\n⬇\nPreprocessing\n (track, order, 123)\n⬇\nFeature Extraction\n (TF-IDF →  important words)\n⬇\nModelling\n (Intent: Track Order)\n⬇\nResponse:\n“Your order 123 is out for delivery”\nWord TF IDF TF-IDF\ntrack 0.33 0.3 0.1\norder 0.33 0.1 0.03\n123 0.33 1 0.33\nHow Chatbot Understands User Input\nTokenization →  [I, want, to, track, my, order, 123]\nStopword Removal →  [want, track, order, 123]\nNormalization →  [track, order, 123]\nIDF values are derived\nfrom the corpus and\ngi",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 8
+  },
+  {
+    "text": "rack, order, 123]\nNormalization →  [track, order, 123]\nIDF values are derived\nfrom the corpus and\ngiven in simplified form\nfor calculation.",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 8
+  },
+  {
+    "text": "Regular Expressions (Regex):\nPattern matching technique used to extract specific data from text\nIn Chatbots, used to identify structured information\nExample:\nInput: “Track my order 123”\nPattern: [0-9]+\nOutput: 123 (Order ID)\nUses:\nExtract Order ID\nDetect phone numbers, emails, etc.\nInput →  Regex →  Output\n“Track my order 123” →  [0-9]+ →  123\nRegex is efficient for extracting fixed patterns without using machine learning.",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 9
+  },
+  {
+    "text": "ut using machine learning.",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 9
+  },
+  {
+    "text": "Finite State Automata (FSA)\nDefinition:\nA mathematical model consisting of states and transitions\nUsed to represent step-by-step processing\nIn Chatbot:\nControls the conversation flow\nMoves from one state to another based on user input\n[Start State] →  [Query State] →  [Processing State] →  [Response State]\nCase Study:\nStart State: waits for input\nQuery State: receives “I want to track my order 123”\nProcessing State: NLP applied →  Tokenization, TF-IDF\nIntent: Track Order\nEntity: 123\nResponse Sta",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 10
+  },
+  {
+    "text": "”\nProcessing State: NLP applied →  Tokenization, TF-IDF\nIntent: Track Order\nEntity: 123\nResponse State: “Your order 123 is out for delivery”\n“NLP pipeline answers what\nthe user wants, while FSA\ndecides what the system\nshould do next.”",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 10
+  },
+  {
+    "text": "Morphological\nAnalysis\nStemming &\nLemmatization:\nInflection &\nDerivation:\nUnderstanding Word Structure:\nMorphology \nBefore the chatbot can understand the 'meaning' of a sentence, it needs to understand the\n'structure' of the individual words. This is where Morphology comes in. users use different\nforms of the same word. \n Breaking down words into their root form (Morphemes).\nto strip away suffixes and prefixes.\nExample: \"Tracking\" or \"Tracked\"            Track. \nHow \"Order\" becomes \"Ordering\" (i",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 11
+  },
+  {
+    "text": "and prefixes.\nExample: \"Tracking\" or \"Tracked\"            Track. \nHow \"Order\" becomes \"Ordering\" (inflection) or \"Orderly\"\n(derivation).",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 11
+  },
+  {
+    "text": "Finite State Transducers (FST):\nIts is an extension of FSA that maps input strings to output strings . it consists of states, input\nsymbols, and output symbol and used for morphological analysis (understanding word\nstructure)\nChatbot analyzes \"surface words\"\ninto root forms and grammatical\nfeatures. It moves beyond\nrecognition to transformation.\n[Surface Word: \"orders\"] → [Root:\n\"order\" + Tag: \"Noun\" + Tag: \"Plural\"]\nCase Study: Word Analysis\nInput Word: \"orders\"\nStep-by-Step Processing:\nState q",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 12
+  },
+  {
+    "text": "un\" + Tag: \"Plural\"]\nCase Study: Word Analysis\nInput Word: \"orders\"\nStep-by-Step Processing:\nState qo: Reads \"o-r-d-e-r\" →  Maps to root \"order\"\nTransition: Reads \"s\" → Triggers mapping to \"Plural\"\nFinal State: Outputs structured data for the chatbot to use\nLexical Result: order + N + Pl\nFSA recognizes if a word is\nvalid, while FST translates\nwhat that word actually\nrepresents.",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 12
+  },
+  {
+    "text": "Syntax Parsing\n01.\n02.\n03.\nAssigning Parts of Speech (Noun, Verb, Determiner).\nI →  (PRON) want →  (VERB) to →  (PER) track →  (VERB) my →\n(PRON) order →  (NOUN).\n A set of rules to define valid sentences.\nRule: S → NP + VP (Sentence consists of Noun Phrase + Verb Phrase) \nVisualizing the hierarchy of\n a sentence.\nPOS Tagging:\nContext-Free\nGrammar (CFG):\nThe Parse Tree:",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 13
+  },
+  {
+    "text": "Semantic Analysis in\nChatbots\n“Semantics is the stage where the chatbot actually understands what\nthe user means.\nFocuses on understanding the meaning of user input, not just words\nConverts natural language into a structured representation\nFor example, if a user says ‘I want to track my order 123’, the chatbot doesn’t\njust read words—it extracts meaning:\nThe user’s intent is tracking                     FOPL Representation:\nThe object is order 123                            Request(User, Track(O",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 14
+  },
+  {
+    "text": "FOPL Representation:\nThe object is order 123                            Request(User, Track(Order123))\nKey Benefits:\nIdentifies user goal accurately\nReduces ambiguity in interpretation\nEnables precise and relevant responses",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 14
+  },
+  {
+    "text": "Machine Learning in\nChatbots\n“Machine Learning helps the chatbot automatically understand user\nintent based on data.\nUsed for Intent Classification\nConverts text →  predicted intent\nAlgorithms:\n1.Naive Bayes :                                        2. Decision Tree: \n   Probabilistic classifier                               Rule-based classification\n   Works well for text data                            Easy to interpret\nText Normalization:\nConverts text into a standard format\nTechniques include",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 15
+  },
+  {
+    "text": "Easy to interpret\nText Normalization:\nConverts text into a standard format\nTechniques include:\nLowercasing\nRemoving punctuationExample:\n“TRACK Order!!” →  “track order”\nWhere is my order →  “track order",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 15
+  },
+  {
+    "text": "Application\nML Techniques in Chatbots\nNaive Bayes: Intent classification using probabilistic models\nDecision Trees: Rule-based decision making\nText Normalization: Standardizing input variations\nReal-World Importance\nNLP transforms customer support by enabling chatbots to\nhandle complex queries with human-like understanding,\nreducing response times from hours to seconds while\nmaintaining accuracy.\nAdditional NLP Applications\nSpell checking and correction\nLanguage translation\nText summarization",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 16
+  },
+  {
+    "text": "Additional NLP Applications\nSpell checking and correction\nLanguage translation\nText summarization",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 16
+  },
+  {
+    "text": "Conclusion\n NLP enables intelligent chatbots by allowing computers to understand and process human\nlanguage effectively. This helps chatbots give accurate and human-like responses. In real\nlife, NLP plays a crucial role in many applications such as customer support, translation, and\nvoice assistants, making communication faster, easier, and more efficient.\nNLP helps chatbots understand human\nlanguage and respond intelligently\nMakes conversations more natural and\naccurate\nReduces human effort in",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 17
+  },
+  {
+    "text": "age and respond intelligently\nMakes conversations more natural and\naccurate\nReduces human effort in customer support\nUsed widely in real-world applications like\ntranslation, voice assistants, etc.",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 17
+  },
+  {
+    "text": "Multi-Feature\n \nSupervised\n \nReinforcement\n \nLearning\n \nfor\n \nStock\n \nTrading\n \nRL_Research\n \nImplementation:\n \n✅\n \n🔁\n \nDAILY\n \nRUN\n \nSTEPS\n \n(FINAL)\n \n🟢\n \nStep\n \n1:\n \nAnaconda\n \nPrompt\n \nखोलो\n \n🟢\n \nStep\n \n2:\n \nEnvironment\n \nactivate\n \nकरो\n \nconda\n \nactivate\n \nrl_project\n \n \n🟢\n \nStep\n \n3:\n \nFolder\n \nमें\n \nजाओ\n \ncd\n \n\"C:\\Users\\91942\\OneDrive\\Pictures\\Documents\\VS\n \ncode\"\n \n \n🟢\n \nStep\n \n4:\n \nCode\n \nrun\n \nकरो\n \npython\n \nhybrid_trading.py\n \n \n \n📌\n \nFULL\n \nCONTEXT:\n \nResearch\n \nPaper\n \n+\n \nImplementa",
+    "source": "RL_Research Implementation.pdf",
+    "page": 1
+  },
+  {
+    "text": "run\n \nकरो\n \npython\n \nhybrid_trading.py\n \n \n \n📌\n \nFULL\n \nCONTEXT:\n \nResearch\n \nPaper\n \n+\n \nImplementation\n \n🔷\n \n1.\n \nResearch\n \nPaper\n \nOverview\n \nTitle\n \nIdea:\n \n \nHybrid\n \nStock\n \nTrading\n \nusing\n \nSupervised\n \nLearning\n \n+\n \nReinforcement\n \nLearning\n \n🎯\n \nGoal:\n \nTo\n \nbuild\n \nan\n \nintelligent\n \ntrading\n \nagent\n \nthat:\n \n●\n \nPredicts\n \nstock\n \ntrends\n \n(Supervised\n \nLearning)\n \n●\n \nLearns\n \noptimal\n \ntrading\n \nstrategy\n \n(Reinforcement\n \nLearning)",
+    "source": "RL_Research Implementation.pdf",
+    "page": 1
+  },
+  {
+    "text": "al\n \ntrading\n \nstrategy\n \n(Reinforcement\n \nLearning)",
+    "source": "RL_Research Implementation.pdf",
+    "page": 1
+  },
+  {
+    "text": "🔷\n \n2.\n \nCore\n \nIdea\n \nof\n \nPaper\n \nThe\n \npaper\n \ncombines:\n \n🧠\n \n1.\n \nSupervised\n \nLearning\n \n(LSTM)\n \n●\n \nPredicts\n \nfuture\n \nstock\n \nprices\n \n(next\n \nfew\n \ndays)\n \n●\n \nGives\n \nguidance\n \nsignal\n:\n \n○\n \nBuy\n \n(+1)\n \n○\n \nSell\n \n(-1)\n \n○\n \nHold\n \n(0)\n \n \n🤖\n \n2.\n \nReinforcement\n \nLearning\n \n(DDPG)\n \n●\n \nLearns\n \nby\n \ninteracting\n \nwith\n \nmarket\n \n●\n \nTakes\n \naction:\n \n○\n \nBuy\n \n/\n \nSell\n \n/\n \nHold\n \n●\n \nReceives\n \nreward\n \nbased\n \non\n \nprofit\n \n \n🔗\n \n3.\n \nHybrid\n \nConcept\n \n(MOST\n \nIMPORTANT)\n \nF",
+    "source": "RL_Research Implementation.pdf",
+    "page": 2
+  },
+  {
+    "text": "●\n \nReceives\n \nreward\n \nbased\n \non\n \nprofit\n \n \n🔗\n \n3.\n \nHybrid\n \nConcept\n \n(MOST\n \nIMPORTANT)\n \nFinal\n \naction\n \nis:\n \na\n \n=\n \n(1\n \n-\n \nλ)\n \n*\n \na_RL\n \n+\n \nλ\n \n*\n \na_SL\n \nWhere:\n \n●\n \na_RL\n \n→\n \nRL\n \naction\n \n●\n \na_SL\n \n→\n \nSupervised\n \naction\n \n●\n \nλ\n \n→\n \nweight\n \n(starts\n \nhigh,\n \ndecreases\n \nover\n \ntime)\n \n👉\n \nMeaning:\n \n●\n \nEarly\n \n→\n \ntrust\n \nsupervised\n \nmodel\n \nmore\n \n●\n \nLater\n \n→\n \nRL\n \nlearns\n \nand\n \ndominates\n \n \n🔷\n \n3.\n \nState,\n \nAction,\n \nReward",
+    "source": "RL_Research Implementation.pdf",
+    "page": 2
+  },
+  {
+    "text": "learns\n \nand\n \ndominates\n \n \n🔷\n \n3.\n \nState,\n \nAction,\n \nReward",
+    "source": "RL_Research Implementation.pdf",
+    "page": 2
+  },
+  {
+    "text": "📊\n \nState\n \n(Input\n \nFeatures)\n \n●\n \nStock\n \nprice\n \n●\n \nTechnical\n \nindicators\n \n(SMA,\n \npatterns)\n \n●\n \nTrend\n \nfeatures\n \n \n🎮\n \nAction\n \nSpace\n \nContinuous\n \nvalue\n \nbetween:\n \n-1\n \n→\n \nSell\n \n0\n \n→\n \nHold\n \n+1\n \n→\n \nBuy\n \n \n💰\n \nReward\n \nFunction\n \nReward\n \n=\n \nEarnings\n \n/\n \nInitial\n \nMoney\n  \n(if\n \nprofit)\n \nReward\n \n=\n \n-0.1\n                     \n(if\n \nloss)\n \n \n🔷\n \n4.\n \nProblem\n \nwith\n \nOriginal\n \nPaper\n \n●\n \nFull\n \nimplementation\n \nrequires:\n \n○\n \nLSTM\n \n(TensorFlow)\n \n○\n \nDDPG\n \n(Deep",
+    "source": "RL_Research Implementation.pdf",
+    "page": 3
+  },
+  {
+    "text": "ginal\n \nPaper\n \n●\n \nFull\n \nimplementation\n \nrequires:\n \n○\n \nLSTM\n \n(TensorFlow)\n \n○\n \nDDPG\n \n(Deep\n \nRL)\n \n●\n \nHeavy,\n \ncomplex,\n \nslow\n \nto\n \nrun\n \n \n🔷\n \n5.\n \nWhat\n \nWE\n \nImplemented\n \n(Simplified\n \nVersion)\n \nWe\n \ncreated\n \na\n \nlightweight\n \nhybrid\n \nmodel\n \nfor\n \npractical\n \nexecution.\n \n \n✅\n \nOur\n \nApproach:\n \n🔹\n \nData:\n \n●\n \nUsed\n \nyfinance\n \nto\n \nfetch\n \nstock\n \ndata\n \n🔹\n \nSupervised\n \nPart\n \n(Simplified):",
+    "source": "RL_Research Implementation.pdf",
+    "page": 3
+  },
+  {
+    "text": "(Simplified):",
+    "source": "RL_Research Implementation.pdf",
+    "page": 3
+  },
+  {
+    "text": "Instead\n \nof\n \nLSTM\n \n→\n \nused\n \nrule-based\n \nlogic:\n \nIf\n \nSMA_10\n \n>\n \nSMA_20\n \n→\n \nBuy\n \nIf\n \nSMA_10\n \n<\n \nSMA_20\n \n→\n \nSell\n \nElse\n \n→\n \nHold\n \n \n🔹\n \nRL\n \nPart\n \n(Simplified\n \nSimulation):\n \n●\n \nSimulated\n \ntrading\n \nbehavior\n \n●\n \nNo\n \ndeep\n \nRL\n \ntraining\n \n(lightweight\n \nversion)\n \n \n🔹\n \nHybrid\n \nBehavior:\n \n●\n \nStrategy\n \ndecisions\n \nbased\n \non\n \nsignals\n \n●\n \nPortfolio\n \nupdated\n \ndynamically\n \n \n🔷\n \n6.\n \nOutput\n \nWe\n \nGot\n \n📈\n \nGraph:\n \nPortfolio\n \nValue\n \nvs\n \nTime\n \nInterpretation:",
+    "source": "RL_Research Implementation.pdf",
+    "page": 4
+  },
+  {
+    "text": "ally\n \n \n🔷\n \n6.\n \nOutput\n \nWe\n \nGot\n \n📈\n \nGraph:\n \nPortfolio\n \nValue\n \nvs\n \nTime\n \nInterpretation:\n \n●\n \nStarts\n \nat\n \n₹10,000\n \n●\n \nShows\n \ngradual\n \ngrowth\n \n●\n \nHas\n \nfluctuations\n \n(realistic)\n \n●\n \nEnds\n \nhigher\n \n→\n \nprofitable\n \nstrategy\n \n \n🔷\n \n7.\n \nKey\n \nResult\n \n👉\n \nThe\n \nhybrid\n \napproach:\n \n●\n \nPerforms\n \nbetter\n \nthan\n \nrandom\n \ntrading\n \n●\n \nShows\n \nstable\n \ngrowth\n \n●\n \nMimics\n \nreal\n \nmarket\n \nbehavior",
+    "source": "RL_Research Implementation.pdf",
+    "page": 4
+  },
+  {
+    "text": "l\n \nmarket\n \nbehavior",
+    "source": "RL_Research Implementation.pdf",
+    "page": 4
+  },
+  {
+    "text": "🔷\n \n8.\n \nWhat\n \nto\n \nSay\n \nin\n \nExplanation\n \n🎤\n \nSimple\n \nExplanation:\n \n“We\n \nimplemented\n \na\n \nsimplified\n \nhybrid\n \ntrading\n \nmodel\n \ninspired\n \nby\n \nthe\n \nresearch\n \npaper.\n \nInstead\n \nof\n \nfull\n \nLSTM-DDPG,\n \nwe\n \nused\n \nmoving\n \naverages\n \nas\n \nsupervised\n \nsignals\n \nand\n \nsimulated\n \ntrading\n \ndecisions.\n \nThe\n \nresults\n \nshow\n \nthat\n \ncombining\n \nprediction\n \nand\n \ndecision-making\n \nimproves\n \ntrading\n \nperformance.”\n \n \n🔷\n \n9.\n \nLimitations\n \n(IMPORTANT)\n \n●\n \nNo\n \nreal\n \nDDPG\n \ntraini",
+    "source": "RL_Research Implementation.pdf",
+    "page": 5
+  },
+  {
+    "text": "ves\n \ntrading\n \nperformance.”\n \n \n🔷\n \n9.\n \nLimitations\n \n(IMPORTANT)\n \n●\n \nNo\n \nreal\n \nDDPG\n \ntraining\n \n●\n \nNo\n \ndeep\n \nLSTM\n \n●\n \nSimplified\n \nlogic\n \n●\n \nNot\n \nproduction-level\n \n \n🔷\n \n10.\n \nFuture\n \nScope\n \n(Very\n \nImportant\n \nfor\n \nmarks)\n \nYou\n \ncan\n \nsay:\n \n●\n \nImplement\n \nreal\n \nLSTM\n \nmodel\n \n●\n \nUse\n \nactual\n \nDDPG\n \n(deep\n \nRL)\n \n●\n \nAdd\n \nmore\n \nfeatures\n \n(RSI,\n \nMACD)\n \n●\n \nApply\n \nto\n \ncrypto\n \n/\n \nforex\n \nmarkets\n \n \n🔷\n \n11.\n \nTools\n \nUsed\n \n●\n \nPython\n \n●\n \nPandas\n \n●\n \nNumpy",
+    "source": "RL_Research Implementation.pdf",
+    "page": 5
+  },
+  {
+    "text": "o\n \ncrypto\n \n/\n \nforex\n \nmarkets\n \n \n🔷\n \n11.\n \nTools\n \nUsed\n \n●\n \nPython\n \n●\n \nPandas\n \n●\n \nNumpy\n \n●\n \nMatplotlib\n \n●\n \nyfinance\n \n \n🔷\n \n12.\n \nFinal\n \nConclusion",
+    "source": "RL_Research Implementation.pdf",
+    "page": 5
+  },
+  {
+    "text": "Hybrid\n \nlearning\n \n(Supervised\n \n+\n \nRL)\n \nimproves\n \ntrading\n \ndecisions\n \nby\n \ncombining\n \nprediction\n \naccuracy\n \nand\n \nadaptive\n \nlearning.\n \n \nWe\n \ncreated\n \na\n \nlightweight\n \nhybrid\n \nmodel\n \nfor\n \npractical\n \nexecution.\n \nWe\n \nimplemented\n \na\n \nhybrid\n \nstock\n \ntrading\n \nmodel\n \ncombining\n \nsupervised\n \nlearning\n \nand\n \nreinforcement\n \nlearning.\n \nThe\n \nsupervised\n \npart\n \npredicts\n \nmarket\n \ntrends\n \nusing\n \nmoving\n \naverages,\n \nwhile\n \nthe\n \nRL\n \npart\n \nsimulates\n \ntrading\n \ndecisions.",
+    "source": "RL_Research Implementation.pdf",
+    "page": 6
+  },
+  {
+    "text": "t\n \ntrends\n \nusing\n \nmoving\n \naverages,\n \nwhile\n \nthe\n \nRL\n \npart\n \nsimulates\n \ntrading\n \ndecisions.\n \nThese\n \nare\n \ncombined\n \nusing\n \na\n \nweighted\n \nequation,\n \nallowing\n \nthe\n \nsystem\n \nto\n \ninitially\n \nrely\n \non\n \npredictions\n \nand\n \ngradually\n \nlearn\n \noptimal\n \nstrategies.\n \nThe\n \nmodel\n \nshows\n \nimproved\n \nperformance\n \nover\n \nrandom\n \ntrading\n \nand\n \ndemonstrates\n \nthe\n \neffectiveness\n \nof\n \ncombining\n \nprediction\n \nwith\n \ndecision-making.\n \n \n“In\n \nimplementation,\n \nwe\n \nfirst\n \ncollect",
+    "source": "RL_Research Implementation.pdf",
+    "page": 6
+  },
+  {
+    "text": "combining\n \nprediction\n \nwith\n \ndecision-making.\n \n \n“In\n \nimplementation,\n \nwe\n \nfirst\n \ncollected\n \nstock\n \ndata\n \nusing\n \nyfinance\n \nand\n \ncomputed\n \nmoving\n \naverages\n \nas\n \nfeatures.\n \nWe\n \ngenerated\n \nsupervised\n \nsignals\n \nusing\n \nSMA\n \ncrossover\n \nlogic.\n \nThen\n \nwe\n \nsimulated\n \na\n \nreinforcement\n \nlearning\n \nagent\n \nthat\n \nperforms\n \nbuy,\n \nsell,\n \nor\n \nhold\n \nactions.\n \nThese\n \ntwo\n \ncomponents\n \nwere\n \ncombined\n \nusing\n \na\n \nweighted\n \nhybrid\n \nequation.\n \nBased\n \non\n \nthe\n \nfinal",
+    "source": "RL_Research Implementation.pdf",
+    "page": 6
+  },
+  {
+    "text": "components\n \nwere\n \ncombined\n \nusing\n \na\n \nweighted\n \nhybrid\n \nequation.\n \nBased\n \non\n \nthe\n \nfinal\n \naction,\n \nwe\n \nupdated\n \nthe\n \nportfolio\n \nand\n \nplotted\n \nthe\n \nperformance\n \nover\n \ntime.”\n \n \nIf\n \nasked:\n \n“Did\n \nyou\n \nstudy\n \nfull\n \npaper\n \nfigures?”\n \nYou\n \nshould\n \nsay:\n \n“Yes,\n \nwe\n \nstudied\n \nthe\n \nconceptual\n \nframework\n \nof\n \nthe\n \npaper\n \nincluding\n \ncandlestick\n \npattern\n \nanalysis,\n \nLSTM-based\n \nprediction,\n \nand\n \nDDPG\n \nreinforcement\n \nlearning\n \narchitecture.\n \nHowever,\n \ni",
+    "source": "RL_Research Implementation.pdf",
+    "page": 6
+  },
+  {
+    "text": "s,\n \nLSTM-based\n \nprediction,\n \nand\n \nDDPG\n \nreinforcement\n \nlearning\n \narchitecture.\n \nHowever,\n \nin\n \nimplementation\n \nwe\n \nsimplified\n \nthe\n \nmodel\n \nusing\n \nmoving\n \naverages\n \nand\n \nsimulated\n \nreinforcement\n \nlearning\n \ndue\n \nto\n \ncomputational\n \nconstraints,\n \nwhile\n \nretaining\n \nthe\n \nhybrid\n \ndecision-making\n \nconcept.”\n \n \n \nMain\n \nIdea\n \n●\n \nThe\n \npaper\n \nproposes\n \na\n \nhybrid\n \nmodel\n \ncombining:\n \n○\n \nLSTM\n \n(Supervised\n \nLearning)\n \n○\n \nDDPG\n \n(Reinforcement\n \nLearning)\n \n●\n \nGoal:",
+    "source": "RL_Research Implementation.pdf",
+    "page": 6
+  },
+  {
+    "text": "combining:\n \n○\n \nLSTM\n \n(Supervised\n \nLearning)\n \n○\n \nDDPG\n \n(Reinforcement\n \nLearning)\n \n●\n \nGoal:\n \n \n👉\n \nOptimal\n \nstock\n \ntrading\n \nstrategy\n \nwith\n \nfaster\n \nconvergence\n \nand\n \nbetter\n \nperformance\n \n🔷\n \nKey\n \nContributions",
+    "source": "RL_Research Implementation.pdf",
+    "page": 6
+  },
+  {
+    "text": "1.\n \nSupervised\n \n+\n \nReinforcement\n \nLearning\n \nIntegration\n \n○\n \nLSTM\n \nprovides\n \ninitial\n \nguidance\n \n(prior\n \nknowledge)\n \n○\n \nDDPG\n \nimproves\n \nthrough\n \nexploration\n \n2.\n \nMulti-feature\n \nInput\n \n○\n \nBasic\n \nstock\n \ndata\n \n○\n \nTechnical\n \nindicators\n \n(MA,\n \nMACD,\n \nRSI,\n \netc.)\n \n○\n \nWave\n \ntheory\n \nfeatures\n \n○\n \nK-line\n \npatterns\n \n3.\n \nImproved\n \nPerformance\n \n○\n \nFaster\n \nconvergence\n \nthan\n \nstandard\n \nRL\n \n○\n \nHigher\n \nprofit\n \n○\n \nLower\n \nrisk\n \n \n🔷\n \nArchitecture\n \nFlow\n \n●\n \nSte",
+    "source": "RL_Research Implementation.pdf",
+    "page": 7
+  },
+  {
+    "text": "than\n \nstandard\n \nRL\n \n○\n \nHigher\n \nprofit\n \n○\n \nLower\n \nrisk\n \n \n🔷\n \nArchitecture\n \nFlow\n \n●\n \nStep\n \n1:\n \nLSTM\n \npredicts\n \nmarket\n \ntrend\n \n(Buy\n \n/\n \nSell\n \n/\n \nHold)\n \n●\n \nStep\n \n2:\n \nDDPG\n \nagent\n \ninteracts\n \nwith\n \nenvironment\n \n●\n \nStep\n \n3:\n \nCombined\n \naction:\n \na\n \n=\n \n(1\n \n−\n \nλ)\n \n*\n \na_RL\n \n+\n \nλ\n \n*\n \na_SL\n \n●\n \nStep\n \n4:\n \nλ\n \ndecreases\n \nover\n \ntime\n \n→\n \nRL\n \ndominates\n \nlater\n \n \n🔷\n \nImportant\n \nTechnical\n \nConcepts\n \nCovered\n \n●\n \nMarkov\n \nDecision\n \nProcess\n \n(MDP)\n \n●\n \nA",
+    "source": "RL_Research Implementation.pdf",
+    "page": 7
+  },
+  {
+    "text": "🔷\n \nImportant\n \nTechnical\n \nConcepts\n \nCovered\n \n●\n \nMarkov\n \nDecision\n \nProcess\n \n(MDP)\n \n●\n \nActor-Critic\n \nArchitecture\n \n●\n \nExperience\n \nReplay\n \n●\n \nReward\n \nFunction\n \nDesign\n \n●\n \nFeature\n \nEngineering\n \n(very\n \nimportant\n \npart\n \nof\n \nthis\n \npaper)\n \n \n🔷\n \nResults\n \n●\n \nTested\n \non:\n \n○\n \nUS,\n \nUK,\n \nChina\n \nmarkets\n \n●\n \nOutperformed:\n \n○\n \nBuy\n \n&\n \nHold\n \n○\n \nMACD\n \n○\n \nPure\n \nDDPG",
+    "source": "RL_Research Implementation.pdf",
+    "page": 7
+  },
+  {
+    "text": "●\n \nAchieved:\n \n \n👉\n \nHigher\n \nreturns\n \n+\n \nfaster\n \nlearning\n \n \n✅\n \nConclusion\n \nYes\n \n—\n \nnot\n \njust\n \n“read”,\n \nI’ve:\n \n●\n \nStructured\n \nit\n \n●\n \nSimplified\n \nit\n \n●\n \nConverted\n \nit\n \ninto\n \npresentation-ready\n \nformat\n \n●\n \nPrepared\n \nyou\n \nfor\n \nviva\n \n+\n \nexplanation\n \n \n \n📌\n \nREADY-TO-SPEAK\n \nANSWER\n \n(WORKING\n \nOF\n \nPAPER)\n \n“This\n \npaper\n \nworks\n \nin\n \nthree\n \nmain\n \nsteps.\n \n \nFirst,\n \nit\n \ntakes\n \nhistorical\n \nstock\n \nmarket\n \ndata\n \nlike\n \nprices\n \nand\n \nvolume,\n \nand\n \nextracts",
+    "source": "RL_Research Implementation.pdf",
+    "page": 8
+  },
+  {
+    "text": "it\n \ntakes\n \nhistorical\n \nstock\n \nmarket\n \ndata\n \nlike\n \nprices\n \nand\n \nvolume,\n \nand\n \nextracts\n \nimportant\n \nfeatures\n \nsuch\n \nas\n \ntrends\n \nand\n \npatterns.\n \nThen,\n \nit\n \nuses\n \nan\n \nLSTM\n \nmodel\n \nto\n \npredict\n \nthe\n \nfuture\n \nmovement\n \nof\n \nthe\n \nstock,\n \nwhich\n \ngives\n \na\n \nsignal\n \nlike\n \nbuy,\n \nsell,\n \nor\n \nhold.\n \nAt\n \nthe\n \nsame\n \ntime,\n \na\n \nreinforcement\n \nlearning\n \nmodel\n \ncalled\n \nDDPG\n \ninteracts\n \nwith\n \nthe\n \nmarket\n \nand\n \nlearns\n \nthe\n \nbest\n \ntrading\n \nactions\n \nbased\n \no",
+    "source": "RL_Research Implementation.pdf",
+    "page": 8
+  },
+  {
+    "text": "DDPG\n \ninteracts\n \nwith\n \nthe\n \nmarket\n \nand\n \nlearns\n \nthe\n \nbest\n \ntrading\n \nactions\n \nbased\n \non\n \nrewards,\n \nwhich\n \nare\n \ncalculated\n \nfrom\n \nprofit\n \nor\n \nloss.\n \nAfter\n \nthat,\n \nboth\n \noutputs\n \nare\n \ncombined\n \nusing\n \na\n \nweighted\n \nformula,\n \nwhere\n \ninitially\n \nmore\n \nimportance\n \nis\n \ngiven\n \nto\n \nthe\n \nLSTM\n \nprediction,\n \nand\n \ngradually\n \nthe\n \nreinforcement\n \nlearning\n \nmodel\n \ntakes\n \nover\n \nas\n \nit\n \nlearns\n \nbetter\n \nstrategies.\n \nFinally,\n \nthe\n \nsystem\n \nexecutes\n \nthe\n \na",
+    "source": "RL_Research Implementation.pdf",
+    "page": 8
+  },
+  {
+    "text": "akes\n \nover\n \nas\n \nit\n \nlearns\n \nbetter\n \nstrategies.\n \nFinally,\n \nthe\n \nsystem\n \nexecutes\n \nthe\n \naction,\n \nupdates\n \nthe\n \nportfolio,\n \nand\n \nkeeps\n \nlearning\n \nfrom\n \nthe\n \nrewards\n \nto\n \nimprove\n \nfuture\n \ndecisions.”",
+    "source": "RL_Research Implementation.pdf",
+    "page": 8
+  },
+  {
+    "text": "📌\n \nWHAT\n \nYOU\n \nDID\n \nIN\n \nCODE\n \n(READY\n \nTO\n \nSPEAK)\n \n“In\n \nour\n \ncode,\n \nwe\n \nfirst\n \nfetched\n \nhistorical\n \nstock\n \ndata\n \nusing\n \nthe\n \nyfinance\n \nlibrary.\n \n \nThen\n \nwe\n \ncalculated\n \ntechnical\n \nindicators,\n \nspecifically\n \nmoving\n \naverages\n \nlike\n \nSMA\n \n10\n \nand\n \nSMA\n \n20.\n \nBased\n \non\n \nthese,\n \nwe\n \ngenerated\n \ntrading\n \nsignals—buy\n \nwhen\n \nshort-term\n \naverage\n \nis\n \ngreater\n \nthan\n \nlong-term\n \naverage,\n \nsell\n \nwhen\n \nit\n \nis\n \nlower,\n \nand\n \nhold\n \notherwise.\n \nAfter\n \nthat,",
+    "source": "RL_Research Implementation.pdf",
+    "page": 9
+  },
+  {
+    "text": "n\n \nlong-term\n \naverage,\n \nsell\n \nwhen\n \nit\n \nis\n \nlower,\n \nand\n \nhold\n \notherwise.\n \nAfter\n \nthat,\n \nwe\n \nsimulated\n \ntrading\n \nby\n \nmaintaining\n \na\n \nportfolio\n \nwith\n \ncash\n \nand\n \nshares,\n \nand\n \nupdated\n \nit\n \nbased\n \non\n \nthe\n \nactions\n \ntaken\n \nat\n \neach\n \nstep.\n \nWe\n \nalso\n \nimplemented\n \na\n \nhybrid\n \napproach\n \nwhere\n \nthe\n \nfinal\n \ndecision\n \nis\n \ninfluenced\n \nby\n \nboth\n \nthe\n \nsignal\n \nlogic\n \nand\n \nsimulated\n \nreinforcement\n \nlearning\n \nbehavior.\n \nFinally,\n \nwe\n \ntracked\n \nthe\n \npor",
+    "source": "RL_Research Implementation.pdf",
+    "page": 9
+  },
+  {
+    "text": "logic\n \nand\n \nsimulated\n \nreinforcement\n \nlearning\n \nbehavior.\n \nFinally,\n \nwe\n \ntracked\n \nthe\n \nportfolio\n \nvalue\n \nover\n \ntime\n \nand\n \nplotted\n \nit\n \nas\n \na\n \ngraph.”\n \n \n \nWHAT\n \nOUTPUT\n \nSHOWS\n \n(VERY\n \nIMPORTANT)\n \n“The\n \noutput\n \nof\n \nour\n \nmodel\n \nis\n \na\n \ngraph\n \nof\n \nportfolio(total\n \nvalue\n \nof\n \nyour\n \ninvestments)\n \nvalue\n \nversus\n \ntime(date).\n \n \nIt\n \nstarts\n \nwith\n \nan\n \ninitial\n \namount\n \nof\n \n₹10,000\n \nand\n \nshows\n \nhow\n \nthe\n \nvalue\n \nchanges\n \nas\n \ntrading\n \ndecisions\n \nare",
+    "source": "RL_Research Implementation.pdf",
+    "page": 9
+  },
+  {
+    "text": "mount\n \nof\n \n₹10,000\n \nand\n \nshows\n \nhow\n \nthe\n \nvalue\n \nchanges\n \nas\n \ntrading\n \ndecisions\n \nare\n \nmade.\n \nThe\n \ngraph\n \nshows\n \nfluctuations,\n \nwhich\n \nrepresent\n \nreal\n \nmarket\n \nconditions,\n \nbut\n \noverall\n \nit\n \nshows\n \nan\n \nincreasing\n \ntrend,\n \nindicating\n \nthat\n \nthe\n \nstrategy\n \nis\n \nprofitable.\n \nThis\n \ndemonstrates\n \nthat\n \ncombining\n \nprediction-based\n \nsignals\n \nwith\n \ndecision-making\n \nimproves\n \ntrading\n \nperformance\n \ncompared\n \nto\n \nrandom\n \nactions.”",
+    "source": "RL_Research Implementation.pdf",
+    "page": 9
+  },
+  {
+    "text": "improves\n \ntrading\n \nperformance\n \ncompared\n \nto\n \nrandom\n \nactions.”",
+    "source": "RL_Research Implementation.pdf",
+    "page": 9
+  },
+  {
+    "text": "We\n \nimplemented\n \na\n \nhybrid\n \nstock\n \ntrading\n \nmodel\n \ncombining\n \nsupervised\n \nlearning\n \nand\n \nreinforcement\n \nlearning.\n \nThe\n \nsupervised\n \npart\n \npredicts\n \nmarket\n \ntrends\n \nusing\n \nSIMPLE\n \nmoving\n \naverages,\n \nwhile\n \nthe\n \nRL\n \npart\n \nsimulates\n \ntrading\n \ndecisions.\n \nThese\n \nare\n \ncombined\n \nusing\n \na\n \nweighted\n \nequation,\n \nallowing\n \nthe\n \nsystem\n \nto\n \ninitially\n \nrely\n \non\n \npredictions\n \nand\n \ngradually\n \nlearn\n \noptimal\n \nstrategies.\n \nThe\n \nmodel\n \nshows\n \nimproved\n \nperf",
+    "source": "RL_Research Implementation.pdf",
+    "page": 10
+  },
+  {
+    "text": "redictions\n \nand\n \ngradually\n \nlearn\n \noptimal\n \nstrategies.\n \nThe\n \nmodel\n \nshows\n \nimproved\n \nperformance\n \nover\n \nrandom\n \ntrading\n \nand\n \ndemonstrates\n \nthe\n \neffectiveness\n \nof\n \ncombining\n \nprediction\n \nwith\n \ndecision-making.\n \n \n“In\n \nimplementation,\n \nwe\n \nfirst\n \ncollected\n \nstock\n \ndata\n \nusing\n \nyfinance\n \nand\n \ncomputed\n \nmoving\n \naverages\n \nas\n \nfeatures.\n \nWe\n \ngenerated\n \nsupervised\n \nsignals\n \nusing\n \nSMA\n \ncrossover\n \nlogic.\n \nThen\n \nwe\n \nsimulated\n \na\n \nreinforcement\n \nlearnin",
+    "source": "RL_Research Implementation.pdf",
+    "page": 10
+  },
+  {
+    "text": "d\n \nsignals\n \nusing\n \nSMA\n \ncrossover\n \nlogic.\n \nThen\n \nwe\n \nsimulated\n \na\n \nreinforcement\n \nlearning\n \nagent\n \nthat\n \nperforms\n \nbuy,\n \nsell,\n \nor\n \nhold\n \nactions.\n \nThese\n \ntwo\n \ncomponents\n \nwere\n \ncombined\n \nusing\n \na\n \nweighted\n \nhybrid\n \nequation.\n \nBased\n \non\n \nthe\n \nfinal\n \naction,\n \nwe\n \nupdated\n \nthe\n \nportfolio\n \nand\n \nplotted\n \nthe\n \nperformance\n \nover\n \ntime.”\n \n \n \nWhat\n \nis\n \nSMA?\n \nSMA\n \n(Simple\n \nMoving\n \nAverage)\n \nis\n \na\n \nstatistical\n \ntechnique\n \nused\n \nin\n \nstock\n \nanalysi",
+    "source": "RL_Research Implementation.pdf",
+    "page": 10
+  },
+  {
+    "text": "SMA\n \n(Simple\n \nMoving\n \nAverage)\n \nis\n \na\n \nstatistical\n \ntechnique\n \nused\n \nin\n \nstock\n \nanalysis\n \nto\n \ncalculate\n \nthe\n \naverage\n \nprice\n \nof\n \na\n \nstock\n \nover\n \na\n \nspecific\n \nnumber\n \nof\n \ndays\n.\n \n👉\n \nIt\n \nhelps\n \nto\n \nsmooth\n \nout\n \nprice\n \nfluctuations\n \nand\n \nidentify\n \ntrends.\n \n \n📊\n \n🔷\n \nFormula\n \nSMA=P1+P2+P3+\n⋯\n+PnnSMA\n \n=\n \n\\frac{P_1\n \n+\n \nP_2\n \n+\n \nP_3\n \n+\n \n\\dots\n \n+\n \nP_n}{n}SMA=nP1 +P2 +P3 +\n⋯\n+Pn  \n \nWhere:\n \n●\n \nP1,P2,...,PnP_1,\n \nP_2,\n \n...,\n \nP_nP1 ,P2 ,...,Pn \n \n=\n \nCl",
+    "source": "RL_Research Implementation.pdf",
+    "page": 10
+  },
+  {
+    "text": "MA=nP1 +P2 +P3 +\n⋯\n+Pn  \n \nWhere:\n \n●\n \nP1,P2,...,PnP_1,\n \nP_2,\n \n...,\n \nP_nP1 ,P2 ,...,Pn \n \n=\n \nClosing\n \nprices\n \n●\n \nnnn\n \n=\n \nNumber\n \nof\n \ndays",
+    "source": "RL_Research Implementation.pdf",
+    "page": 10
+  },
+  {
+    "text": "📌\n \n🔷\n \nWhat\n \nis\n \nLSTM?\n \nLSTM\n \n(Long\n \nShort-Term\n \nMemory)\n \nis\n \na\n \ntype\n \nof\n \nRecurrent\n \nNeural\n \nNetwork\n \n(RNN)\n \nused\n \nfor\n \ntime-series\n \ndata\n.\n \n🧠\n \nKey\n \nIdea:\n \n●\n \nIt\n \nremembers\n \npast\n \ninformation\n \nfor\n \na\n \nlong\n \ntime\n \n●\n \nUseful\n \nfor\n \nsequential\n \ndata\n \nlike:\n \n○\n \nStock\n \nprices\n \n○\n \nSpeech\n \n○\n \nText\n \n🔷\n \nIn\n \nstock\n \ntrading:\n \n●\n \nLSTM\n \nlearns\n \npatterns\n \nfrom\n \npast\n \nprices\n \n●\n \nPredicts\n \nfuture\n \ntrend\n \n(up/down)\n \n \n🎤\n \nViva\n \nAnswer\n \nfor\n \nLSTM\n \n“",
+    "source": "RL_Research Implementation.pdf",
+    "page": 11
+  },
+  {
+    "text": "m\n \npast\n \nprices\n \n●\n \nPredicts\n \nfuture\n \ntrend\n \n(up/down)\n \n \n🎤\n \nViva\n \nAnswer\n \nfor\n \nLSTM\n \n“LSTM\n \nis\n \na\n \ntype\n \nof\n \nneural\n \nnetwork\n \nused\n \nfor\n \ntime-series\n \ndata.\n \nIt\n \ncan\n \nremember\n \nlong-term\n \ndependencies\n \nand\n \nis\n \nused\n \nin\n \nstock\n \nprediction\n \nto\n \nlearn\n \npatterns\n \nfrom\n \npast\n \nprices\n \nand\n \npredict\n \nfuture\n \ntrends.”\n \n \n📌\n \n🔷\n \nWhat\n \nis\n \nDDPG?\n \nDDPG\n \n(Deep\n \nDeterministic\n \nPolicy\n \nGradient)\n \nis\n \na\n \nReinforcement\n \nLearning\n \nalgorithm\n.\n \n🤖\n \nKey",
+    "source": "RL_Research Implementation.pdf",
+    "page": 11
+  },
+  {
+    "text": "Deterministic\n \nPolicy\n \nGradient)\n \nis\n \na\n \nReinforcement\n \nLearning\n \nalgorithm\n.\n \n🤖\n \nKey\n \nIdea:\n \n●\n \nLearns\n \nby\n \ninteraction\n \nwith\n \nenvironment\n \n●\n \nTakes\n \nactions:\n \n○\n \nBuy\n \n/\n \nSell\n \n/\n \nHold\n \n●\n \nImproves\n \nusing\n \nreward\n \n(profit/loss)\n \n \n🔷\n \nHow\n \nit\n \nworks:",
+    "source": "RL_Research Implementation.pdf",
+    "page": 11
+  },
+  {
+    "text": "●\n \nActor\n \nNetwork\n \n→\n \ndecides\n \naction\n \n●\n \nCritic\n \nNetwork\n \n→\n \nevaluates\n \naction\n \n👉\n \nGoal:\n \nmaximize\n \nprofit\n \n \n🎤\n \nViva\n \nAnswer\n \nfor\n \nDDPG\n \n“DDPG\n \nis\n \na\n \nreinforcement\n \nlearning\n \nalgorithm\n \nwhere\n \nan\n \nagent\n \nlearns\n \noptimal\n \nactions\n \nby\n \ninteracting\n \nwith\n \nthe\n \nenvironment.\n \nIt\n \nuses\n \nan\n \nactor\n \nnetwork\n \nto\n \ntake\n \nactions\n \nand\n \na\n \ncritic\n \nnetwork\n \nto\n \nevaluate\n \nthem,\n \naiming\n \nto\n \nmaximize\n \nrewards\n \nlike\n \nprofit\n \nin\n \ntrading.”\n \n \n🔥\n \nSIM",
+    "source": "RL_Research Implementation.pdf",
+    "page": 12
+  },
+  {
+    "text": "o\n \nevaluate\n \nthem,\n \naiming\n \nto\n \nmaximize\n \nrewards\n \nlike\n \nprofit\n \nin\n \ntrading.”\n \n \n🔥\n \nSIMPLE\n \nDIFFERENCE\n \n(VERY\n \nIMPORTANT)\n \nLSTM\n \nDDPG\n \nPredicts\n \nfuture\n \nTakes\n \naction\n \nSupervised\n \nLearning\n \nReinforcement\n \nLearning\n \nUses\n \npast\n \ndata\n \nLearns\n \nby\n \nexperience\n \nOutput:\n \ntrend\n \nOutput:\n \ndecision",
+    "source": "RL_Research Implementation.pdf",
+    "page": 12
+  },
+  {
+    "text": "Smart\n \nEngagement\n \nAnalyzer\n \nStudent\n \nName:\n \nAastha\n \nNagar\n \nRegistration\n \nNo.:\n \n23BAI11205\n \nCourse:\n \nComputer\n \nVision\n \n(CSE3010)\n \nDate:\n \n26\n \nMarch\n \n2026\n \nProject\n \nRepository:\n \nhttps://github.com/AasthaNagar23/Smart-Engagement-Analyzer\n \n1.\n \nProject\n \nOverview\n \nThe\n \nSmart\n \nEngagement\n \nAnalyzer\n \nis\n \na\n \nComputer\n \nVision–based\n \nreal-time\n \nsystem\n \nthat\n \nanalyzes\n \nuser\n \nengagement\n \nusing\n \nwebcam\n \nvideo\n \ninput.\n \nThe\n \nsystem\n \ncaptures\n \nlive\n \nvideo\n \nframes\n \na",
+    "source": "Smart Engagement Analyzer.pdf",
+    "page": 1
+  },
+  {
+    "text": "engagement\n \nusing\n \nwebcam\n \nvideo\n \ninput.\n \nThe\n \nsystem\n \ncaptures\n \nlive\n \nvideo\n \nframes\n \nand\n \nprocesses\n \nfacial\n \nfeatures\n \nto\n \ndetermine\n \nthe\n \nuser’s\n \nattention\n \nlevel.\n \nThe\n \nproject\n \nfocuses\n \non\n \ndetecting\n \nfacial\n \nbehavior\n \nsuch\n \nas\n \neye\n \nmovement,\n \nhead\n \norientation,\n \nand\n \nfacial\n \nlandmarks\n \nto\n \nclassify\n \nengagement\n \nstates\n \nlike\n \nattentive,\n \ndistracted,\n \nor\n \ndrowsy.\n \nThis\n \nsystem\n \ndemonstrates\n \npractical\n \napplications\n \nof\n \nComputer\n \nVision",
+    "source": "Smart Engagement Analyzer.pdf",
+    "page": 1
+  },
+  {
+    "text": ",\n \nor\n \ndrowsy.\n \nThis\n \nsystem\n \ndemonstrates\n \npractical\n \napplications\n \nof\n \nComputer\n \nVision\n \nin\n \nhuman\n \nbehavior\n \nanalysis\n \nand\n \nintelligent\n \nmonitoring\n \nsystems.\n \n2.\n \nObjectives\n \n●\n \nTo\n \ncapture\n \nreal-time\n \nvideo\n \nusing\n \na\n \nwebcam\n \n●\n \nTo\n \ndetect\n \nand\n \nanalyze\n \nhuman\n \nfacial\n \nfeatures\n \nusing\n \nComputer\n \nVision\n \n●\n \nTo\n \ntrack\n \neye\n \nmovement\n \nand\n \nhead\n \norientation\n \n●\n \nTo\n \nestimate\n \nuser\n \nengagement\n \nlevel\n \nbased\n \non\n \nfacial\n \ncues\n \n●\n \nTo\n \nappl",
+    "source": "Smart Engagement Analyzer.pdf",
+    "page": 1
+  },
+  {
+    "text": "ntation\n \n●\n \nTo\n \nestimate\n \nuser\n \nengagement\n \nlevel\n \nbased\n \non\n \nfacial\n \ncues\n \n●\n \nTo\n \napply\n \nimage\n \nprocessing\n \ntechniques\n \nfor\n \nframe-wise\n \nanalysis\n \n \n3.\n \nTools\n \nand\n \nTechnologies\n \n●\n \nProgramming\n \nLanguage:\n \nPython\n \n3.10+\n \n●\n \nLibraries:\n \n○\n \nOpenCV\n \n–\n \nreal-time\n \nimage\n \nand\n \nvideo\n \nprocessing\n \n○\n \nMediaPipe\n \n–\n \nfacial\n \nlandmark\n \ndetection\n \n○\n \nNumPy\n \n–\n \nnumerical\n \noperations\n \n●\n \nIDE:\n \nVisual\n \nStudio\n \nCode\n \n●\n \nVersion\n \nControl:\n \nGit\n \n&\n \nGitH",
+    "source": "Smart Engagement Analyzer.pdf",
+    "page": 1
+  },
+  {
+    "text": "numerical\n \noperations\n \n●\n \nIDE:\n \nVisual\n \nStudio\n \nCode\n \n●\n \nVersion\n \nControl:\n \nGit\n \n&\n \nGitHub",
+    "source": "Smart Engagement Analyzer.pdf",
+    "page": 1
+  },
+  {
+    "text": "4.\n \nMethodology\n \nStep\n \n1:\n \nVideo\n \nCapture\n \nA\n \nwebcam\n \nis\n \nused\n \nto\n \ncapture\n \nreal-time\n \nvideo\n \nframes.\n \nStep\n \n2:\n \nFrame\n \nProcessing\n \nEach\n \nframe\n \nis\n \nprocessed\n \nindividually\n \nusing\n \nOpenCV\n \nfor\n \nanalysis.\n \nStep\n \n3:\n \nFace\n \nDetection\n \nFacial\n \nlandmarks\n \nare\n \ndetected\n \nusing\n \nMediaPipe\n \nFace\n \nMesh,\n \nidentifying\n \nkey\n \npoints\n \nsuch\n \nas\n \neyes,\n \nnose,\n \nand\n \nface\n \ncontour.\n \nStep\n \n4:\n \nFeature\n \nExtraction\n \nImportant\n \nfeatures\n \nextracted\n \ninclude:",
+    "source": "Smart Engagement Analyzer.pdf",
+    "page": 2
+  },
+  {
+    "text": "face\n \ncontour.\n \nStep\n \n4:\n \nFeature\n \nExtraction\n \nImportant\n \nfeatures\n \nextracted\n \ninclude:\n \n●\n \nEye\n \naspect\n \nratio\n \n(for\n \nblink/attention\n \ndetection)\n \n●\n \nHead\n \nposition\n \nand\n \norientation\n \n●\n \nFacial\n \nlandmark\n \nmovement\n \npatterns\n \nStep\n \n5:\n \nEngagement\n \nAnalysis\n \nBased\n \non\n \nextracted\n \nfeatures,\n \nthe\n \nsystem\n \nclassifies\n \nengagement\n \ninto:\n \n●\n \nAttentive\n \n●\n \nDistracted\n \n●\n \nDrowsy\n \nStep\n \n6:\n \nOutput\n \nVisualization\n \nResults\n \nare\n \ndisplayed\n \nin\n \nreal-time",
+    "source": "Smart Engagement Analyzer.pdf",
+    "page": 2
+  },
+  {
+    "text": "acted\n \n●\n \nDrowsy\n \nStep\n \n6:\n \nOutput\n \nVisualization\n \nResults\n \nare\n \ndisplayed\n \nin\n \nreal-time\n \non\n \nthe\n \nvideo\n \nfeed.",
+    "source": "Smart Engagement Analyzer.pdf",
+    "page": 2
+  },
+  {
+    "text": "5.\n \nComputer\n \nVision\n \nConcepts\n \nUsed\n \nThis\n \nproject\n \ndirectly\n \napplies\n \nthe\n \nfollowing\n \nComputer\n \nVision\n \nconcepts:\n \n●\n \nImage\n \nAcquisition\n \n(webcam\n \ninput)\n \n●\n \nFace\n \nDetection\n \nand\n \nLandmark\n \nDetection\n \n●\n \nFeature\n \nExtraction\n \nfrom\n \nimages\n \n●\n \nReal-time\n \nvideo\n \nframe\n \nprocessing\n \n●\n \nMotion\n \nanalysis\n \nof\n \nfacial\n \nfeatures\n \n●\n \nObject\n \ndetection\n \n(face\n \nas\n \nobject)\n \n \n6.\n \nFeatures\n \n●\n \nReal-time\n \nwebcam-based\n \nprocessing\n \n●\n \nFace\n \nand\n \neye\n \ntr",
+    "source": "Smart Engagement Analyzer.pdf",
+    "page": 3
+  },
+  {
+    "text": "object)\n \n \n6.\n \nFeatures\n \n●\n \nReal-time\n \nwebcam-based\n \nprocessing\n \n●\n \nFace\n \nand\n \neye\n \ntracking\n \n●\n \nEngagement\n \nlevel\n \ndetection\n \n●\n \nLightweight\n \nand\n \nfast\n \nprocessing\n \n●\n \nUses\n \ndeep\n \nlearning–based\n \nlandmark\n \ndetection\n \n(MediaPipe)\n \n \n7.\n \nApplications\n \n●\n \nOnline\n \nlearning\n \nengagement\n \nmonitoring\n \n●\n \nDriver\n \ndrowsiness\n \ndetection\n \nsystems\n \n●\n \nWorkplace\n \nattention\n \ntracking\n \n●\n \nHuman-computer\n \ninteraction\n \nsystems\n \n●\n \nSmart\n \nsurveillance\n \nsystems",
+    "source": "Smart Engagement Analyzer.pdf",
+    "page": 3
+  },
+  {
+    "text": "tention\n \ntracking\n \n●\n \nHuman-computer\n \ninteraction\n \nsystems\n \n●\n \nSmart\n \nsurveillance\n \nsystems",
+    "source": "Smart Engagement Analyzer.pdf",
+    "page": 3
+  },
+  {
+    "text": "8.\n \nConclusion\n \nThe\n \nSmart\n \nEngagement\n \nAnalyzer\n \ndemonstrates\n \nhow\n \nComputer\n \nVision\n \ntechniques\n \ncan\n \nbe\n \nused\n \nto\n \ninterpret\n \nhuman\n \nfacial\n \nbehavior\n \nfrom\n \nreal-time\n \nvideo\n \ninput.\n \nBy\n \nanalyzing\n \nfacial\n \nlandmarks\n \nand\n \nmotion\n \npatterns,\n \nthe\n \nsystem\n \neffectively\n \nestimates\n \nuser\n \nengagement\n \nlevels.\n \nThis\n \nproject\n \nsuccessfully\n \napplies\n \ncore\n \nComputer\n \nVision\n \nconcepts\n \nsuch\n \nas\n \nface\n \ndetection,\n \nfeature\n \nextraction,\n \nand\n \nreal-time\n \ni",
+    "source": "Smart Engagement Analyzer.pdf",
+    "page": 4
+  },
+  {
+    "text": "er\n \nVision\n \nconcepts\n \nsuch\n \nas\n \nface\n \ndetection,\n \nfeature\n \nextraction,\n \nand\n \nreal-time\n \nimage\n \nprocessing,\n \nmaking\n \nit\n \nrelevant\n \nto\n \nmodern\n \nintelligent\n \nmonitoring\n \nsystems.",
+    "source": "Smart Engagement Analyzer.pdf",
+    "page": 4
+  }
+]
