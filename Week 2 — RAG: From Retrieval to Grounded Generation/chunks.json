@@ -1,0 +1,357 @@
+[
+  {
+    "text": "AI Chatbot (Customer Support Virtual Agent using Natural Language Processing) Presented by 23BAI11114 MALISHKA SALIL PARADKAR 23BAI11146 SAHU SAMIKSHA SAMEER 23BAI11147 DIVYANSH BHARDWAJ 23BAI11198 ARYA KHULLAR 23BAI11205 AASTHA NAGAR 23BAI11209 GARV GUPTA",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 1
+  },
+  {
+    "text": "An AI Chatbot is a software that can interact with users in natural language. It simulates human conversation using text or voice. Uses Natural Language Processing (NLP) to understand and respond. Can handle multiple queries instantly without human intervention. Introduction – What is an AI Chatbot?",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 2
+  },
+  {
+    "text": "Role of NLP in Chatbots NLP helps chatbots understand human language. Converts user input into structured data. Key tasks: Text understanding Intent detection Entity extraction Enables meaningful and context-aware responses.",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 3
+  },
+  {
+    "text": "Widely used in customer support systems Examples: Order tracking Complaint handling FAQs automation Used by companies like: Amazon Flipkart Banking apps Real-World Use of Chatbots",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 4
+  },
+  {
+    "text": "Case Study Overview Example: Customer Support Chatbot Handles: Order tracking Complaints General queries Works 24/7 without human involvement Reduces workload on human agents",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 5
+  },
+  {
+    "text": "Example User Input User Input: 👉 “I want to track my order 123” What chatbot does: Understands request type → Track order Extracts order ID → 123 Gives response → Order status",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 6
+  },
+  {
+    "text": "NLP Pipeline in AI Chatbot User Input Data Preproces sing Feature Extraction Modelling Response 1. Data Preprocessing: a. Sentence Segmentation b. Word Tokenization d. Normalization 2. Feature Extraction Converting text into numerical features by assigning importance to words using TF-IDF values. 3.Modelling Applying machine learning algorithms (e.g., Naive Bayes) to classify user intent.c. Stopword removal",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 7
+  },
+  {
+    "text": "rd removal",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 7
+  },
+  {
+    "text": "Input: “I want to track my order 123” ⬇ Preprocessing (track, order, 123) ⬇ Feature Extraction (TF-IDF → important words) ⬇ Modelling (Intent: Track Order) ⬇ Response: “Your order 123 is out for delivery” Word TF IDF TF-IDF track 0.33 0.3 0.1 order 0.33 0.1 0.03 123 0.33 1 0.33 How Chatbot Understands User Input Tokenization → [I, want, to, track, my, order, 123] Stopword Removal → [want, track, order, 123] Normalization → [track, order, 123] IDF values are derived from the corpus and given in s",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 8
+  },
+  {
+    "text": "rder, 123] Normalization → [track, order, 123] IDF values are derived from the corpus and given in simplified form for calculation.",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 8
+  },
+  {
+    "text": "Regular Expressions (Regex): Pattern matching technique used to extract specific data from text In Chatbots, used to identify structured information Example: Input: “Track my order 123” Pattern: [0-9]+ Output: 123 (Order ID) Uses: Extract Order ID Detect phone numbers, emails, etc. Input → Regex → Output “Track my order 123” → [0-9]+ → 123 Regex is efficient for extracting fixed patterns without using machine learning.",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 9
+  },
+  {
+    "text": "sing machine learning.",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 9
+  },
+  {
+    "text": "Finite State Automata (FSA) Definition: A mathematical model consisting of states and transitions Used to represent step-by-step processing In Chatbot: Controls the conversation flow Moves from one state to another based on user input [Start State] → [Query State] → [Processing State] → [Response State] Case Study: Start State: waits for input Query State: receives “I want to track my order 123” Processing State: NLP applied → Tokenization, TF-IDF Intent: Track Order Entity: 123 Response State:",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 10
+  },
+  {
+    "text": "rocessing State: NLP applied → Tokenization, TF-IDF Intent: Track Order Entity: 123 Response State: “Your order 123 is out for delivery” “NLP pipeline answers what the user wants, while FSA decides what the system should do next.”",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 10
+  },
+  {
+    "text": "Morphological Analysis Stemming & Lemmatization: Inflection & Derivation: Understanding Word Structure: Morphology Before the chatbot can understand the 'meaning' of a sentence, it needs to understand the 'structure' of the individual words. This is where Morphology comes in. users use different forms of the same word. Breaking down words into their root form (Morphemes). to strip away suffixes and prefixes. Example: \"Tracking\" or \"Tracked\" Track. How \"Order\" becomes \"Ordering\" (inflection) or \"",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 11
+  },
+  {
+    "text": "d prefixes. Example: \"Tracking\" or \"Tracked\" Track. How \"Order\" becomes \"Ordering\" (inflection) or \"Orderly\" (derivation).",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 11
+  },
+  {
+    "text": "Finite State Transducers (FST): Its is an extension of FSA that maps input strings to output strings . it consists of states, input symbols, and output symbol and used for morphological analysis (understanding word structure) Chatbot analyzes \"surface words\" into root forms and grammatical features. It moves beyond recognition to transformation. [Surface Word: \"orders\"] → [Root: \"order\" + Tag: \"Noun\" + Tag: \"Plural\"] Case Study: Word Analysis Input Word: \"orders\" Step-by-Step Processing: State q",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 12
+  },
+  {
+    "text": "un\" + Tag: \"Plural\"] Case Study: Word Analysis Input Word: \"orders\" Step-by-Step Processing: State qo: Reads \"o-r-d-e-r\" → Maps to root \"order\" Transition: Reads \"s\" → Triggers mapping to \"Plural\" Final State: Outputs structured data for the chatbot to use Lexical Result: order + N + Pl FSA recognizes if a word is valid, while FST translates what that word actually represents.",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 12
+  },
+  {
+    "text": "Syntax Parsing 01. 02. 03. Assigning Parts of Speech (Noun, Verb, Determiner). I → (PRON) want → (VERB) to → (PER) track → (VERB) my → (PRON) order → (NOUN). A set of rules to define valid sentences. Rule: S → NP + VP (Sentence consists of Noun Phrase + Verb Phrase) Visualizing the hierarchy of a sentence. POS Tagging: Context-Free Grammar (CFG): The Parse Tree:",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 13
+  },
+  {
+    "text": "Semantic Analysis in Chatbots “Semantics is the stage where the chatbot actually understands what the user means. Focuses on understanding the meaning of user input, not just words Converts natural language into a structured representation For example, if a user says ‘I want to track my order 123’, the chatbot doesn’t just read words—it extracts meaning: The user’s intent is tracking FOPL Representation: The object is order 123 Request(User, Track(Order123)) Key Benefits: Identifies user goal ac",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 14
+  },
+  {
+    "text": "tation: The object is order 123 Request(User, Track(Order123)) Key Benefits: Identifies user goal accurately Reduces ambiguity in interpretation Enables precise and relevant responses",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 14
+  },
+  {
+    "text": "Machine Learning in Chatbots “Machine Learning helps the chatbot automatically understand user intent based on data. Used for Intent Classification Converts text → predicted intent Algorithms: 1.Naive Bayes : 2. Decision Tree: Probabilistic classifier Rule-based classification Works well for text data Easy to interpret Text Normalization: Converts text into a standard format Techniques include: Lowercasing Removing punctuationExample: “TRACK Order!!” → “track order” Where is my order → “track or",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 15
+  },
+  {
+    "text": "wercasing Removing punctuationExample: “TRACK Order!!” → “track order” Where is my order → “track order",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 15
+  },
+  {
+    "text": "Application ML Techniques in Chatbots Naive Bayes: Intent classification using probabilistic models Decision Trees: Rule-based decision making Text Normalization: Standardizing input variations Real-World Importance NLP transforms customer support by enabling chatbots to handle complex queries with human-like understanding, reducing response times from hours to seconds while maintaining accuracy. Additional NLP Applications Spell checking and correction Language translation Text summarization",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 16
+  },
+  {
+    "text": "Additional NLP Applications Spell checking and correction Language translation Text summarization",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 16
+  },
+  {
+    "text": "Conclusion NLP enables intelligent chatbots by allowing computers to understand and process human language effectively. This helps chatbots give accurate and human-like responses. In real life, NLP plays a crucial role in many applications such as customer support, translation, and voice assistants, making communication faster, easier, and more efficient. NLP helps chatbots understand human language and respond intelligently Makes conversations more natural and accurate Reduces human effort in c",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 17
+  },
+  {
+    "text": "ge and respond intelligently Makes conversations more natural and accurate Reduces human effort in customer support Used widely in real-world applications like translation, voice assistants, etc.",
+    "source": "NLP Group 17 Presentation.pdf",
+    "page": 17
+  },
+  {
+    "text": "Multi-Feature Supervised Reinforcement Learning for Stock Trading RL_Research Implementation: ✅ 🔁 DAILY RUN STEPS (FINAL) 🟢 Step 1: Anaconda Prompt खोलो 🟢 Step 2: Environment activate करो conda activate rl_project 🟢 Step 3: Folder में जाओ cd \"C:\\Users\\91942\\OneDrive\\Pictures\\Documents\\VS code\" 🟢 Step 4: Code run करो python hybrid_trading.py 📌 FULL CONTEXT: Research Paper + Implementation 🔷 1. Research Paper Overview Title Idea: Hybrid Stock Trading using Supervised Learning + Reinforcement Learn",
+    "source": "RL_Research Implementation.pdf",
+    "page": 1
+  },
+  {
+    "text": "arch Paper Overview Title Idea: Hybrid Stock Trading using Supervised Learning + Reinforcement Learning 🎯 Goal: To build an intelligent trading agent that: ● Predicts stock trends (Supervised Learning) ● Learns optimal trading strategy (Reinforcement Learning)",
+    "source": "RL_Research Implementation.pdf",
+    "page": 1
+  },
+  {
+    "text": "🔷 2. Core Idea of Paper The paper combines: 🧠 1. Supervised Learning (LSTM) ● Predicts future stock prices (next few days) ● Gives guidance signal : ○ Buy (+1) ○ Sell (-1) ○ Hold (0) 🤖 2. Reinforcement Learning (DDPG) ● Learns by interacting with market ● Takes action: ○ Buy / Sell / Hold ● Receives reward based on profit 🔗 3. Hybrid Concept (MOST IMPORTANT) Final action is: a = (1 - λ) * a_RL + λ * a_SL Where: ● a_RL → RL action ● a_SL → Supervised action ● λ → weight (starts high, decreases ov",
+    "source": "RL_Research Implementation.pdf",
+    "page": 2
+  },
+  {
+    "text": "* a_SL Where: ● a_RL → RL action ● a_SL → Supervised action ● λ → weight (starts high, decreases over time) 👉 Meaning: ● Early → trust supervised model more ● Later → RL learns and dominates 🔷 3. State, Action, Reward",
+    "source": "RL_Research Implementation.pdf",
+    "page": 2
+  },
+  {
+    "text": "📊 State (Input Features) ● Stock price ● Technical indicators (SMA, patterns) ● Trend features 🎮 Action Space Continuous value between: -1 → Sell 0 → Hold +1 → Buy 💰 Reward Function Reward = Earnings / Initial Money (if profit) Reward = -0.1 (if loss) 🔷 4. Problem with Original Paper ● Full implementation requires: ○ LSTM (TensorFlow) ○ DDPG (Deep RL) ● Heavy, complex, slow to run 🔷 5. What WE Implemented (Simplified Version) We created a lightweight hybrid model for practical execution. ✅ Our A",
+    "source": "RL_Research Implementation.pdf",
+    "page": 3
+  },
+  {
+    "text": "lemented (Simplified Version) We created a lightweight hybrid model for practical execution. ✅ Our Approach: 🔹 Data: ● Used yfinance to fetch stock data 🔹 Supervised Part (Simplified):",
+    "source": "RL_Research Implementation.pdf",
+    "page": 3
+  },
+  {
+    "text": "Instead of LSTM → used rule-based logic: If SMA_10 > SMA_20 → Buy If SMA_10 < SMA_20 → Sell Else → Hold 🔹 RL Part (Simplified Simulation): ● Simulated trading behavior ● No deep RL training (lightweight version) 🔹 Hybrid Behavior: ● Strategy decisions based on signals ● Portfolio updated dynamically 🔷 6. Output We Got 📈 Graph: Portfolio Value vs Time Interpretation: ● Starts at ₹10,000 ● Shows gradual growth ● Has fluctuations (realistic) ● Ends higher → profitable strategy 🔷 7. Key Result 👉 The",
+    "source": "RL_Research Implementation.pdf",
+    "page": 4
+  },
+  {
+    "text": "dual growth ● Has fluctuations (realistic) ● Ends higher → profitable strategy 🔷 7. Key Result 👉 The hybrid approach: ● Performs better than random trading ● Shows stable growth ● Mimics real market behavior",
+    "source": "RL_Research Implementation.pdf",
+    "page": 4
+  },
+  {
+    "text": "🔷 8. What to Say in Explanation 🎤 Simple Explanation: “We implemented a simplified hybrid trading model inspired by the research paper. Instead of full LSTM-DDPG, we used moving averages as supervised signals and simulated trading decisions. The results show that combining prediction and decision-making improves trading performance.” 🔷 9. Limitations (IMPORTANT) ● No real DDPG training ● No deep LSTM ● Simplified logic ● Not production-level 🔷 10. Future Scope (Very Important for marks) You can",
+    "source": "RL_Research Implementation.pdf",
+    "page": 5
+  },
+  {
+    "text": "STM ● Simplified logic ● Not production-level 🔷 10. Future Scope (Very Important for marks) You can say: ● Implement real LSTM model ● Use actual DDPG (deep RL) ● Add more features (RSI, MACD) ● Apply to crypto / forex markets 🔷 11. Tools Used ● Python ● Pandas ● Numpy ● Matplotlib ● yfinance 🔷 12. Final Conclusion",
+    "source": "RL_Research Implementation.pdf",
+    "page": 5
+  },
+  {
+    "text": "Hybrid learning (Supervised + RL) improves trading decisions by combining prediction accuracy and adaptive learning. We created a lightweight hybrid model for practical execution. We implemented a hybrid stock trading model combining supervised learning and reinforcement learning. The supervised part predicts market trends using moving averages, while the RL part simulates trading decisions. These are combined using a weighted equation, allowing the system to initially rely on predictions and gr",
+    "source": "RL_Research Implementation.pdf",
+    "page": 6
+  },
+  {
+    "text": "are combined using a weighted equation, allowing the system to initially rely on predictions and gradually learn optimal strategies. The model shows improved performance over random trading and demonstrates the effectiveness of combining prediction with decision-making. “In implementation, we first collected stock data using yfinance and computed moving averages as features. We generated supervised signals using SMA crossover logic. Then we simulated a reinforcement learning agent that performs",
+    "source": "RL_Research Implementation.pdf",
+    "page": 6
+  },
+  {
+    "text": "ed signals using SMA crossover logic. Then we simulated a reinforcement learning agent that performs buy, sell, or hold actions. These two components were combined using a weighted hybrid equation. Based on the final action, we updated the portfolio and plotted the performance over time.” If asked: “Did you study full paper figures?” You should say: “Yes, we studied the conceptual framework of the paper including candlestick pattern analysis, LSTM-based prediction, and DDPG reinforcement learnin",
+    "source": "RL_Research Implementation.pdf",
+    "page": 6
+  },
+  {
+    "text": "paper including candlestick pattern analysis, LSTM-based prediction, and DDPG reinforcement learning architecture. However, in implementation we simplified the model using moving averages and simulated reinforcement learning due to computational constraints, while retaining the hybrid decision-making concept.” Main Idea ● The paper proposes a hybrid model combining: ○ LSTM (Supervised Learning) ○ DDPG (Reinforcement Learning) ● Goal: 👉 Optimal stock trading strategy with faster convergence and",
+    "source": "RL_Research Implementation.pdf",
+    "page": 6
+  },
+  {
+    "text": "DDPG (Reinforcement Learning) ● Goal: 👉 Optimal stock trading strategy with faster convergence and better performance 🔷 Key Contributions",
+    "source": "RL_Research Implementation.pdf",
+    "page": 6
+  },
+  {
+    "text": "1. Supervised + Reinforcement Learning Integration ○ LSTM provides initial guidance (prior knowledge) ○ DDPG improves through exploration 2. Multi-feature Input ○ Basic stock data ○ Technical indicators (MA, MACD, RSI, etc.) ○ Wave theory features ○ K-line patterns 3. Improved Performance ○ Faster convergence than standard RL ○ Higher profit ○ Lower risk 🔷 Architecture Flow ● Step 1: LSTM predicts market trend (Buy / Sell / Hold) ● Step 2: DDPG agent interacts with environment ● Step 3: Combined",
+    "source": "RL_Research Implementation.pdf",
+    "page": 7
+  },
+  {
+    "text": "market trend (Buy / Sell / Hold) ● Step 2: DDPG agent interacts with environment ● Step 3: Combined action: a = (1 − λ) * a_RL + λ * a_SL ● Step 4: λ decreases over time → RL dominates later 🔷 Important Technical Concepts Covered ● Markov Decision Process (MDP) ● Actor-Critic Architecture ● Experience Replay ● Reward Function Design ● Feature Engineering (very important part of this paper) 🔷 Results ● Tested on: ○ US, UK, China markets ● Outperformed: ○ Buy & Hold ○ MACD ○ Pure DDPG",
+    "source": "RL_Research Implementation.pdf",
+    "page": 7
+  },
+  {
+    "text": "lts ● Tested on: ○ US, UK, China markets ● Outperformed: ○ Buy & Hold ○ MACD ○ Pure DDPG",
+    "source": "RL_Research Implementation.pdf",
+    "page": 7
+  },
+  {
+    "text": "● Achieved: 👉 Higher returns + faster learning ✅ Conclusion Yes — not just “read”, I’ve: ● Structured it ● Simplified it ● Converted it into presentation-ready format ● Prepared you for viva + explanation 📌 READY-TO-SPEAK ANSWER (WORKING OF PAPER) “This paper works in three main steps. First, it takes historical stock market data like prices and volume, and extracts important features such as trends and patterns. Then, it uses an LSTM model to predict the future movement of the stock, which give",
+    "source": "RL_Research Implementation.pdf",
+    "page": 8
+  },
+  {
+    "text": "ds and patterns. Then, it uses an LSTM model to predict the future movement of the stock, which gives a signal like buy, sell, or hold. At the same time, a reinforcement learning model called DDPG interacts with the market and learns the best trading actions based on rewards, which are calculated from profit or loss. After that, both outputs are combined using a weighted formula, where initially more importance is given to the LSTM prediction, and gradually the reinforcement learning model takes",
+    "source": "RL_Research Implementation.pdf",
+    "page": 8
+  },
+  {
+    "text": "ore importance is given to the LSTM prediction, and gradually the reinforcement learning model takes over as it learns better strategies. Finally, the system executes the action, updates the portfolio, and keeps learning from the rewards to improve future decisions.”",
+    "source": "RL_Research Implementation.pdf",
+    "page": 8
+  },
+  {
+    "text": "📌 WHAT YOU DID IN CODE (READY TO SPEAK) “In our code, we first fetched historical stock data using the yfinance library. Then we calculated technical indicators, specifically moving averages like SMA 10 and SMA 20. Based on these, we generated trading signals—buy when short-term average is greater than long-term average, sell when it is lower, and hold otherwise. After that, we simulated trading by maintaining a portfolio with cash and shares, and updated it based on the actions taken at each st",
+    "source": "RL_Research Implementation.pdf",
+    "page": 9
+  },
+  {
+    "text": "y maintaining a portfolio with cash and shares, and updated it based on the actions taken at each step. We also implemented a hybrid approach where the final decision is influenced by both the signal logic and simulated reinforcement learning behavior. Finally, we tracked the portfolio value over time and plotted it as a graph.” WHAT OUTPUT SHOWS (VERY IMPORTANT) “The output of our model is a graph of portfolio(total value of your investments) value versus time(date). It starts with an initial a",
+    "source": "RL_Research Implementation.pdf",
+    "page": 9
+  },
+  {
+    "text": "h of portfolio(total value of your investments) value versus time(date). It starts with an initial amount of ₹10,000 and shows how the value changes as trading decisions are made. The graph shows fluctuations, which represent real market conditions, but overall it shows an increasing trend, indicating that the strategy is profitable. This demonstrates that combining prediction-based signals with decision-making improves trading performance compared to random actions.”",
+    "source": "RL_Research Implementation.pdf",
+    "page": 9
+  },
+  {
+    "text": "ecision-making improves trading performance compared to random actions.”",
+    "source": "RL_Research Implementation.pdf",
+    "page": 9
+  },
+  {
+    "text": "We implemented a hybrid stock trading model combining supervised learning and reinforcement learning. The supervised part predicts market trends using SIMPLE moving averages, while the RL part simulates trading decisions. These are combined using a weighted equation, allowing the system to initially rely on predictions and gradually learn optimal strategies. The model shows improved performance over random trading and demonstrates the effectiveness of combining prediction with decision-making. “",
+    "source": "RL_Research Implementation.pdf",
+    "page": 10
+  },
+  {
+    "text": "er random trading and demonstrates the effectiveness of combining prediction with decision-making. “In implementation, we first collected stock data using yfinance and computed moving averages as features. We generated supervised signals using SMA crossover logic. Then we simulated a reinforcement learning agent that performs buy, sell, or hold actions. These two components were combined using a weighted hybrid equation. Based on the final action, we updated the portfolio and plotted the perform",
+    "source": "RL_Research Implementation.pdf",
+    "page": 10
+  },
+  {
+    "text": "eighted hybrid equation. Based on the final action, we updated the portfolio and plotted the performance over time.” What is SMA? SMA (Simple Moving Average) is a statistical technique used in stock analysis to calculate the average price of a stock over a specific number of days . 👉 It helps to smooth out price fluctuations and identify trends. 📊 🔷 Formula SMA=P1+P2+P3+ ⋯ +PnnSMA = \\frac{P_1 + P_2 + P_3 + \\dots + P_n}{n}SMA=nP1 +P2 +P3 + ⋯ +Pn Where: ● P1,P2,...,PnP_1, P_2, ..., P_nP1 ,P2 ,...,",
+    "source": "RL_Research Implementation.pdf",
+    "page": 10
+  },
+  {
+    "text": "2 + P_3 + \\dots + P_n}{n}SMA=nP1 +P2 +P3 + ⋯ +Pn Where: ● P1,P2,...,PnP_1, P_2, ..., P_nP1 ,P2 ,...,Pn = Closing prices ● nnn = Number of days",
+    "source": "RL_Research Implementation.pdf",
+    "page": 10
+  },
+  {
+    "text": "📌 🔷 What is LSTM? LSTM (Long Short-Term Memory) is a type of Recurrent Neural Network (RNN) used for time-series data . 🧠 Key Idea: ● It remembers past information for a long time ● Useful for sequential data like: ○ Stock prices ○ Speech ○ Text 🔷 In stock trading: ● LSTM learns patterns from past prices ● Predicts future trend (up/down) 🎤 Viva Answer for LSTM “LSTM is a type of neural network used for time-series data. It can remember long-term dependencies and is used in stock prediction to le",
+    "source": "RL_Research Implementation.pdf",
+    "page": 11
+  },
+  {
+    "text": "d for time-series data. It can remember long-term dependencies and is used in stock prediction to learn patterns from past prices and predict future trends.” 📌 🔷 What is DDPG? DDPG (Deep Deterministic Policy Gradient) is a Reinforcement Learning algorithm . 🤖 Key Idea: ● Learns by interaction with environment ● Takes actions: ○ Buy / Sell / Hold ● Improves using reward (profit/loss) 🔷 How it works:",
+    "source": "RL_Research Implementation.pdf",
+    "page": 11
+  },
+  {
+    "text": ":",
+    "source": "RL_Research Implementation.pdf",
+    "page": 11
+  },
+  {
+    "text": "● Actor Network → decides action ● Critic Network → evaluates action 👉 Goal: maximize profit 🎤 Viva Answer for DDPG “DDPG is a reinforcement learning algorithm where an agent learns optimal actions by interacting with the environment. It uses an actor network to take actions and a critic network to evaluate them, aiming to maximize rewards like profit in trading.” 🔥 SIMPLE DIFFERENCE (VERY IMPORTANT) LSTM DDPG Predicts future Takes action Supervised Learning Reinforcement Learning Uses past data",
+    "source": "RL_Research Implementation.pdf",
+    "page": 12
+  },
+  {
+    "text": "NT) LSTM DDPG Predicts future Takes action Supervised Learning Reinforcement Learning Uses past data Learns by experience Output: trend Output: decision",
+    "source": "RL_Research Implementation.pdf",
+    "page": 12
+  },
+  {
+    "text": "Smart Engagement Analyzer Student Name: Aastha Nagar Registration No.: 23BAI11205 Course: Computer Vision (CSE3010) Date: 26 March 2026 Project Repository: https://github.com/AasthaNagar23/Smart-Engagement-Analyzer 1. Project Overview The Smart Engagement Analyzer is a Computer Vision–based real-time system that analyzes user engagement using webcam video input. The system captures live video frames and processes facial features to determine the user’s attention level. The project focuses on det",
+    "source": "Smart Engagement Analyzer.pdf",
+    "page": 1
+  },
+  {
+    "text": "es and processes facial features to determine the user’s attention level. The project focuses on detecting facial behavior such as eye movement, head orientation, and facial landmarks to classify engagement states like attentive, distracted, or drowsy. This system demonstrates practical applications of Computer Vision in human behavior analysis and intelligent monitoring systems. 2. Objectives ● To capture real-time video using a webcam ● To detect and analyze human facial features using Compute",
+    "source": "Smart Engagement Analyzer.pdf",
+    "page": 1
+  },
+  {
+    "text": "o capture real-time video using a webcam ● To detect and analyze human facial features using Computer Vision ● To track eye movement and head orientation ● To estimate user engagement level based on facial cues ● To apply image processing techniques for frame-wise analysis 3. Tools and Technologies ● Programming Language: Python 3.10+ ● Libraries: ○ OpenCV – real-time image and video processing ○ MediaPipe – facial landmark detection ○ NumPy – numerical operations ● IDE: Visual Studio Code ● Ver",
+    "source": "Smart Engagement Analyzer.pdf",
+    "page": 1
+  },
+  {
+    "text": "MediaPipe – facial landmark detection ○ NumPy – numerical operations ● IDE: Visual Studio Code ● Version Control: Git & GitHub",
+    "source": "Smart Engagement Analyzer.pdf",
+    "page": 1
+  },
+  {
+    "text": "4. Methodology Step 1: Video Capture A webcam is used to capture real-time video frames. Step 2: Frame Processing Each frame is processed individually using OpenCV for analysis. Step 3: Face Detection Facial landmarks are detected using MediaPipe Face Mesh, identifying key points such as eyes, nose, and face contour. Step 4: Feature Extraction Important features extracted include: ● Eye aspect ratio (for blink/attention detection) ● Head position and orientation ● Facial landmark movement patter",
+    "source": "Smart Engagement Analyzer.pdf",
+    "page": 2
+  },
+  {
+    "text": "io (for blink/attention detection) ● Head position and orientation ● Facial landmark movement patterns Step 5: Engagement Analysis Based on extracted features, the system classifies engagement into: ● Attentive ● Distracted ● Drowsy Step 6: Output Visualization Results are displayed in real-time on the video feed.",
+    "source": "Smart Engagement Analyzer.pdf",
+    "page": 2
+  },
+  {
+    "text": "5. Computer Vision Concepts Used This project directly applies the following Computer Vision concepts: ● Image Acquisition (webcam input) ● Face Detection and Landmark Detection ● Feature Extraction from images ● Real-time video frame processing ● Motion analysis of facial features ● Object detection (face as object) 6. Features ● Real-time webcam-based processing ● Face and eye tracking ● Engagement level detection ● Lightweight and fast processing ● Uses deep learning–based landmark detection",
+    "source": "Smart Engagement Analyzer.pdf",
+    "page": 3
+  },
+  {
+    "text": "ent level detection ● Lightweight and fast processing ● Uses deep learning–based landmark detection (MediaPipe) 7. Applications ● Online learning engagement monitoring ● Driver drowsiness detection systems ● Workplace attention tracking ● Human-computer interaction systems ● Smart surveillance systems",
+    "source": "Smart Engagement Analyzer.pdf",
+    "page": 3
+  },
+  {
+    "text": "8. Conclusion The Smart Engagement Analyzer demonstrates how Computer Vision techniques can be used to interpret human facial behavior from real-time video input. By analyzing facial landmarks and motion patterns, the system effectively estimates user engagement levels. This project successfully applies core Computer Vision concepts such as face detection, feature extraction, and real-time image processing, making it relevant to modern intelligent monitoring systems.",
+    "source": "Smart Engagement Analyzer.pdf",
+    "page": 4
+  },
+  {
+    "text": "rocessing, making it relevant to modern intelligent monitoring systems.",
+    "source": "Smart Engagement Analyzer.pdf",
+    "page": 4
+  }
+]
